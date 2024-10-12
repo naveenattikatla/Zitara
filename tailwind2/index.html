@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+
+    <!-- header -->
+
+    <header style="background-color: #013139; color: white; ">
+        <nav class="flex items-center justify-between w-[90%] m-auto ">
+            <div ><a href="" class="text-[30px] hover:text-green-500">Zitara</a></div>
+            <div class="nav-links md:static absolute bg-yellow-500 md:bg-inherit  min-h-[10vh]    md:min-h-fit  md:w-auto left-0 top-[-200%] w-full">
+                <ul class="flex  flex-col  md:flex-row md:items-center gap-[10px] p-[30px]">
+                    <li><a class="hover:text-green-600 text-[20px] m-[10px]" href="">Company</a></li>
+                    <li><a class="hover:text-green-600 text-[20px] m-[10px]" href="">Products</a></li>
+                    <li><a class="hover:text-green-600 text-[20px] m-[10px]" href="">Resources</a></li>
+                    <li><a class="hover:text-green-600 text-[20px] m-[10px]" href="">Contact us</a></li>
+                </ul>
+            </div>
+            <ion-icon    onclick="onToggleMenu(this)" name="menu" class="text-5xl cursor-pointer md:hidden"></ion-icon>
+        </nav>
+    </header>
+
+    <div class="flex flex-col items-center justify-center w-[90%] gap-6 m-auto  lg:flex-row">
+        <div>
+            <h1 class="text-[90px]">Work with batteries?</h1>
+            <h1 class="text-[90px]">Work with Zitara.</h1>
+            <p class="text-[20px]">Powerful battery management software to help you understand, manage, and maximize your batteries.</p>
+            <button class="py-[10px] px-[20px] border border-black  rounded-md my-[20px]   bg-yellow-300">Watch Video</button>
+        </div>
+        <div>
+            <img src="./images/back.png" alt="background" class="h-[600px]" />
+        </div>
+    </div>
+
+        <!-- puzzle section -->
+    <div style="background-color: #013139;">
+        <div class="flex flex-col items-start lg:items-center lg:flex-row text-white  gap-6 py-[30px] w-[90%] m-auto" >
+            <div class="w-[30%] m-auto">
+                <img src="./images/puzzle.png" alt="puzzle" />
+            </div>
+            <div class="flex flex-col lg:w-[60%] w-full gap-5   font-light">
+                <h1 class="text-[70px]">We solve the puzzle so you can see the big picture.</h1>
+                <p class="text-[20px]">Batteries are hard to predict, and battery management systems can only begin to scratch the surface.</p>
+                <p class="text-[20px]">At Zitara, our state-of-the-art software combines physics and
+                machine-learning to reveal exactly what’s going on inside your batteries.
+                Zitara’s tools can help you choose the right battery, predict its behavior, monitor charge and
+                 health across your deployment, project degradation over time, and so much more.</p>
+                <p class="text-[20px]">When we tackle all that for you, you don’t have to worry about overlooking safety risks or lost performance.
+                Instead, you get to focus on building incredible products that your customers can always rely on.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Extra section -->
+    <div style="background-color: rgb(192, 215, 215);" class="py-[50px]">
+        <div style="width: 90%; " class="flex flex-col gap-6 m-auto">
+            <div class="text-[40px] ">Zitara Studio</div>
+            <div class="w-[15%] border border-black "></div>
+            <div class="text-[60px] w-full xl:w-[70%]">Cutting-edge simulation tools to guide your design decisions.</div>
+            <div  class="text-[30px] w-full xl:w-[80%]">See how your batteries will behave across different scenarios and environments with Zitara Studio.</div>
+            <div class="flex flex-col gap-6 xl:flex-row">
+                <div class="h-[150px] border border-black hidden xl:block"></div>
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">Customize loads, temperature, and age to predict and qualify asset lifetime reliability.</div>
+                <div class="h-[150px] border border-black hidden xl:block"></div>
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">Get transparent, independent data from our library of validated battery models, 
+                    and stay on top of flexible supply chain.</div>
+                <div class="h-[150px] border border-black hidden xl:block"></div>
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">Simulate cell and pack performance to understand the scenarios that matter to your bottom line.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- car background -->
+
+    <div style="background-image: url(./images/car.png); ">
+        <div class="flex flex-col w-[90%] m-auto text-white">
+            <div class="text-[100px]">Zitara Live</div>
+            <div class="w-[50%] lg:w-[30%] border border-white"></div>
+            <div class="text-[60px] xl:w-[50%] w-full my-[10px]">Track your batteries out in the real world. Now, and in the years to come.</div>
+            <div class="text-[20px] xl:w-[70%] w-full my-[50px]">Get accurate, actionable insights into your batteries, 
+                thanks to embedded and cloud systems that work together to manage your deployment.
+            </div>
+            <div class="flex flex-col items-center gap-6 font-light xl:flex-row mb-[40px]">
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">
+                    Access the state of your battery’s charge, health, and more with precise embedded algorithms. 
+                    Integrate with onboard controls for automatic optimization.</div>
+                <div class="h-[150px] border border-white hidden xl:block"></div>
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">
+                    Observe system health parameters at the edge to anticipate and prevent reliability and safety issues, and 
+                    extract insights into degradation across your application over time.
+                </div> 
+                <div class="h-[150px] border border-white hidden xl:block"></div>
+                <div class="text-[18px] xl:w-[20%] w-full my-[10px]">
+                    Get a simulatable digital twin of every battery you’ve deployed so you can enhance operations and 
+                    minimize warranty risk — continuously and automatically in the cloud.
+                </div>   
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-yellow-400">
+        <div class=" flex flex-col items-start py-[60px]  w-[90%] m-auto">
+            <div class="text-[80px] xl:w-[50%] w-full">Work with the best in the business.</div>
+            <p class="text-[20px] font-light my-[10px] xl:w-[60%]  w-full">We’ve assembled a world-class team of top researchers
+                andseasoned engineers to build safety-critical firmware and large-scale machine learning systems.</p>
+            <button class="text-white bg-black py-[10px] px-[20px] rounded-md my-[30px]">Meet the Team</button>
+
+        </div>
+    </div>
+
+        <!-- Energy Resolution -->
+    <div class="" style="background-color: #A4C3C6;">
+        <div class="flex flex-col  py-[50px] items-start  w-[90%]  m-auto" >
+            <h1 class="text-[60px] ] my-[6px] xl:w-[70%] w-full">We’re here to enable the renewable energy revolution.</h1>
+            <p class="text-3xl m-[10px] my-[6px] xl:w-[70%] w-full">The world is decarbonizing, and batteries have a big role to play.
+                Here are just some of the industries we serve.</p>
+            <div class="flex flex-col lg:flex-row  items-center  justify-evenly  w-[90%] m-auto gap-[50px] my-[30px]">
+                <div>
+                    <img src="./images/1.svg" />
+                    <h3 class="py-[20px]">Electric Vehicles</h3>
+                </div>
+                <div>
+                    <img src="./images/2.svg" />
+                    <h3 class="py-[20px]">Stationary Storage</h3>
+                </div>
+                <div>
+                    <img src="./images/3.svg" />
+                    <h3 class="py-[20px]">Satellites</h3>
+                </div>
+                <div>
+                    <img src="./images/4.svg" />
+                    <h3 class="py-[20px]">Consumer Electronics</h3>
+                </div>
+                <div>
+                    <img src="./images/5.svg" />
+                    <h3 class="py-[20px]">IoT Applications</h3>
+                </div>
+                <div>
+                    <img src="./images/6.svg" />
+                    <h3 class="py-[20px]">Micromobility</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: rgb(197, 206, 214);">
+        <div class="flex flex-col items-start w-[90%] m-auto py-[50px]" >
+            <h1 class="text-[80px] my-[30px]">Ready to get started?</h1>
+            <p class="text-[20px] my-[10px] w-[70%]">We’d love to hear from you. Let’s chat about how Zitara can help manage your batteries,
+                so you can focus on building great products for your customers.</p>
+            <button class="text-white bg-black  rounded-md py-[10px] px-[20px] my-[10px]">Contact us</button>
+        </div>
+    </div>
+        <!-- footer -->
+<div  style="background-color: #034F5D;">
+    <div class="w-[90%] m-auto" >
+        <div class="flex gap-2 flex-col lg:flex-row text-white items-center lg:justify-center lg:gap-6 lg:items-start py-[100px]" >
+            <div class="flex flex-col">
+                <div>Company</div>
+                <a href="" class="my-[10px]">About us</a>
+                <a href="" class="my-[10px]">Careers</a>
+                <a href="" class="my-[10px]">Contact us</a>
+            </div>
+            <div class="w-[30%] border border-black lg:hidden"></div>
+            <div class="h-[150px] border border-black hidden lg:block"></div>
+            <div class="flex flex-col">
+                <div>Product</div>
+                <a href="" class="my-[10px]">Zitara Studio</a>
+                <a href="" class="my-[10px]">Zitara Live</a>
+            </div>
+            <div class="w-[30%] border border-black lg:hidden"></div>
+            <div class="h-[150px] border border-black hidden lg:block"></div>
+            <div class="flex flex-col">
+                <div>Resources</div>
+                <a href="" class="my-[10px]">Battery Blog</a>
+                <a href="" class="my-[10px]">Battery Glossary</a>
+                <a href="" class="my-[10px]">Energy Storage</a>
+            </div>
+            <div class="w-[30%] border border-black lg:hidden"></div>
+            <div class="h-[150px] border border-black hidden lg:block"></div>
+            <div >
+                <input type="text" placeholder="Subscribe for updates"  class="rounded py-[7px] px-[15px]"/>
+                <button class="bg-black text-white py-[7px] px-[15px] rounded">Submit</button>
+            </div>
+            <div>
+                <p>© 2024 Zitara Technologies All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const navLinks = document.querySelector(".nav-links");
+        console.log(navLinks)
+        function onToggleMenu(e){
+            e.name = e.name === "menu" ? 'close' : "menu";
+            navLinks.classList.toggle("top-[4%]")
+            console.log(navLinks)
+        }
+    </script>
+</body>
+
+</html>
